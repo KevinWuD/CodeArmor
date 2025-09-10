@@ -34,10 +34,10 @@ export default function Landing() {
   ];
 
   const team = [
-    { name: 'Thin Thin Khine', gh: '#', li: '#' },
-    { name: 'Kevin Wu', gh: '#', li: '#' },
-    { name: 'Peter Tan-Gatue', gh: '#', li: '#' },
-    { name: 'Michal Marrow', gh: '#', li: '#' },
+    { name: 'Thin Thin Khine', gh: 'https://github.com/Thinthin77', li: '#' },
+    { name: 'Kevin Wu', gh: 'https://github.com/KevinWuD', li: '#' },
+    { name: 'Peter Tan-Gatue', gh: 'https://github.com/Ptangatue', li: '#' },
+    { name: 'Michal Marrow', gh: 'https://github.com/MichalMarrow', li: '#' },
   ];
 
   return (
@@ -89,7 +89,8 @@ export default function Landing() {
               Download
             </a>
             <a
-              href='#how'
+              href='https://github.com/oslabs-beta/CodeArmor'
+              target='_blank'
               className='inline-flex rounded-xl px-6 py-3 border border-white/15'
             >
               Learn More
@@ -157,10 +158,18 @@ export default function Landing() {
             >
               <div className='font-medium'>{m.name}</div>
               <div className='mt-2 flex justify-center gap-3 text-sm text-neutral-300'>
-                <a href={m.gh} className='hover:text-white underline'>
+                <a
+                  href={m.gh}
+                  target='_blank'
+                  className='hover:text-white underline'
+                >
                   GitHub
                 </a>
-                <a href={m.li} className='hover:text-white underline'>
+                <a
+                  href={m.li}
+                  target='_blank'
+                  className='hover:text-white underline'
+                >
                   LinkedIn
                 </a>
               </div>
@@ -175,16 +184,16 @@ export default function Landing() {
         className='border-t border-white/10 mt-10 text-sm text-neutral-400'
       >
         <div className='max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center gap-4'>
-          <div>© {year} CodeArmor. All rights reserved.</div>
+          {/* <div>© {year} CodeArmor. All rights reserved.</div> */}
           <div className='flex gap-4'>
             <a href='#' className='hover:text-white'>
-              Privacy
+              {/* Privacy */}
             </a>
             <a href='#' className='hover:text-white'>
-              Terms
+              {/* Terms */}
             </a>
             <a href='mailto:hello@codearmor.dev' className='hover:text-white'>
-              hello@codearmor.dev
+              {/* hello@codearmor.dev */}
             </a>
           </div>
         </div>
