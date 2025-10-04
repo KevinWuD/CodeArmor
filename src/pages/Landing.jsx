@@ -83,17 +83,20 @@ export default function Landing() {
           </p>
           <div className='mt-8 flex justify-center gap-4'>
             <a
-              href='#'
+              href='https://marketplace.visualstudio.com/items?itemName=CodeArmor.codearmor'
+              target='_blank'
+              rel='noopener noreferrer'
               className='inline-flex rounded-xl px-6 py-3 bg-white text-black font-medium'
             >
-              Download
+              Get on Marketplace
             </a>
             <a
               href='https://github.com/oslabs-beta/CodeArmor'
               target='_blank'
+              rel='noopener noreferrer'
               className='inline-flex rounded-xl px-6 py-3 border border-white/15'
             >
-              Learn More
+              Github Repo
             </a>
           </div>
           <div className='mt-10 flex flex-wrap justify-center gap-3 text-xs text-neutral-300'>
