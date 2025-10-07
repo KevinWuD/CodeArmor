@@ -130,6 +130,39 @@ export default function Landing() {
         </div>
       </section>
 
+      {/* Security Rules */}
+      <section id='rules' className='max-w-6xl mx-auto px-6 py-16'>
+        <h2 className='text-2xl md:text-3xl font-semibold'>Security Rules</h2>
+        <p className='mt-2 text-neutral-400'>
+          CodeArmor currently detects and flags five categories of security
+          vulnerabilities:
+        </p>
+        <ul className='mt-6 space-y-3 text-neutral-300'>
+          <li>
+            <span className='font-semibold'>Injection Prevention:</span> Detects
+            unsafe <code>eval()</code>, script injection, and unsanitized DOM
+            APIs
+          </li>
+          <li>
+            <span className='font-semibold'>Deserialization Safety:</span> Flags
+            unsafe <code>JSON.parse()</code>, prototype pollution, untrusted
+            object creation
+          </li>
+          <li>
+            <span className='font-semibold'>Secrets Management:</span> Detects
+            hardcoded credentials, API keys, and tokens
+          </li>
+          <li>
+            <span className='font-semibold'>Input Validation:</span> Highlights
+            unsanitized user input (XSS, SQL injection risks)
+          </li>
+          <li>
+            <span className='font-semibold'>IAM Permissions:</span> Surfaces
+            overly permissive policies and risky role usage
+          </li>
+        </ul>
+      </section>
+
       {/* How it works */}
       <section id='how' className='max-w-6xl mx-auto px-6 py-16'>
         <h2 className='text-2xl md:text-3xl font-semibold'>How It Works</h2>
