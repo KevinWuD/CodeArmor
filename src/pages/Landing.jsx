@@ -137,30 +137,47 @@ export default function Landing() {
           CodeArmor currently detects and flags five categories of security
           vulnerabilities:
         </p>
-        <ul className='mt-6 space-y-3 text-neutral-300'>
-          <li>
-            <span className='font-semibold'>Injection Prevention:</span> Detects
-            unsafe <code>eval()</code>, script injection, and unsanitized DOM
-            APIs
-          </li>
-          <li>
-            <span className='font-semibold'>Deserialization Safety:</span> Flags
-            unsafe <code>JSON.parse()</code>, prototype pollution, untrusted
-            object creation
-          </li>
-          <li>
-            <span className='font-semibold'>Secrets Management:</span> Detects
-            hardcoded credentials, API keys, and tokens
-          </li>
-          <li>
-            <span className='font-semibold'>Input Validation:</span> Highlights
-            unsanitized user input (XSS, SQL injection risks)
-          </li>
-          <li>
-            <span className='font-semibold'>IAM Permissions:</span> Surfaces
-            overly permissive policies and risky role usage
-          </li>
-        </ul>
+        <div className='mt-8 grid gap-6 sm:grid-cols-2 md:grid-cols-3'>
+          <div className='rounded-2xl border border-white/10 p-6'>
+            <h3 className='text-lg font-semibold'>Injection Prevention</h3>
+            <p className='mt-2 text-neutral-300'>
+              Detects unsafe <code>eval()</code>, script injection, and
+              unsanitized DOM APIs.
+            </p>
+          </div>
+
+          <div className='rounded-2xl border border-white/10 p-6'>
+            <h3 className='text-lg font-semibold'>Deserialization Safety</h3>
+            <p className='mt-2 text-neutral-300'>
+              Flags unsafe <code>JSON.parse()</code>, prototype pollution, and
+              untrusted object creation.
+            </p>
+          </div>
+
+          <div className='rounded-2xl border border-white/10 p-6'>
+            <h3 className='text-lg font-semibold'>Secrets Management</h3>
+            <p className='mt-2 text-neutral-300'>
+              Detects hardcoded credentials, API keys, and tokens to prevent
+              data exposure.
+            </p>
+          </div>
+
+          <div className='rounded-2xl border border-white/10 p-6'>
+            <h3 className='text-lg font-semibold'>Input Validation</h3>
+            <p className='mt-2 text-neutral-300'>
+              Highlights unsanitized user inputs that can lead to XSS or SQL
+              injection.
+            </p>
+          </div>
+
+          <div className='rounded-2xl border border-white/10 p-6'>
+            <h3 className='text-lg font-semibold'>IAM Permissions</h3>
+            <p className='mt-2 text-neutral-300'>
+              Surfaces overly permissive policies and risky role usage in
+              serverless functions.
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* How it works */}
