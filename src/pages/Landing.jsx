@@ -217,7 +217,7 @@ export default function Landing() {
                   href={m.li}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='hover:text-red-400 underline transition'
+                  className='hidden hover:text-red-400 underline transition'
                 >
                   LinkedIn
                 </a>
